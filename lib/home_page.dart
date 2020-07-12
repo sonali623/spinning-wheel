@@ -19,14 +19,15 @@ class _HomePageState extends State<HomePage>
   AnimationController _ctrl;
   Animation _ani;
   List<Luck> _items = [
-    Luck("apple", Colors.accents[0]),
-    Luck("raspberry", Colors.accents[2]),
-    Luck("grapes", Colors.accents[4]),
-    Luck("fruit", Colors.accents[6]),
-    Luck("milk", Colors.accents[8]),
-    Luck("salad", Colors.accents[10]),
-    Luck("cheese", Colors.accents[12]),
-    Luck("carrot", Colors.accents[14]),
+    Luck("apple", Colors.accents[0],"Eat Healthy"),
+    Luck("family", Colors.accents[2],"Spend time with Family"),
+    Luck("workout", Colors.accents[12],"Do some Yoga"),
+    Luck("friends", Colors.accents[6],"Go play with friends"),
+    Luck("collaboration", Colors.accents[8],"Help someone in need"),
+    //Luck("milk", Colors.accents[8]),
+    Luck("meditation", Colors.accents[10],"Relax and meditate"),
+   // Luck("cheese", Colors.accents[4]),
+    //Luck("carrot", Colors.accents[14]),
   ];
 
   @override
@@ -104,12 +105,20 @@ class _HomePageState extends State<HomePage>
 
   _buildResult(_value) {
     var _index = _calIndex(_value * _angle + _current);
+    String task = _items[_index].task;
     String _asset = _items[_index].asset;
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
       child: Align(
         alignment: Alignment.bottomCenter,
-        child: Image.asset(_asset, height: 80, width: 80),
+        child: Row(
+          children: <Widget>[
+            SizedBox(width: 15.0,),
+            Image.asset(_asset, height: 80.0, width: 80.0),
+            SizedBox(height: 5.0,),
+            Text(task,style: TextStyle(fontSize: 18.0),),
+          ],
+        ),
       ),
     );
   }

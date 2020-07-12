@@ -87,7 +87,7 @@ class _BoardViewState extends State<BoardView> {
         alignment: Alignment.topCenter,
         child: ConstrainedBox(
           constraints:
-              BoxConstraints.expand(height: size.height / 3, width: 44),
+              BoxConstraints.expand(height: size.height / 3, width: 55),
           child: Image.asset(luck.asset),
         ),
       ),

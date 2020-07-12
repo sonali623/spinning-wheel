@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
 import 'home_page.dart';
 
-void main() => runApp(MyApp());
+//void main() => runApp(MyApp());
+void main() {
+//  WidgetsFlutterBinding.ensureInitialized();
+//  // set preferred orientations (landscape only)
+//  await SystemChrome.setPreferredOrientations([
+//    DeviceOrientation.landscapeLeft,
+//    DeviceOrientation.landscapeRight,
+//  ]);
+
+  return runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

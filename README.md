@@ -1,8 +1,3 @@
-# flutter_fortune_wheel
+# spinning_wheel
 
-A Flutter fortune wheel.
-
-## Video
-[![Flutter - Fortune Wheel](http://img.youtube.com/vi/-fqpzYTr98I/0.jpg)](http://www.youtube.com/watch?v=-fqpzYTr98I "Flutter - Fortune Wheel")
-
-
+<a href="https://github.com/baobao1996mn/flutter-fortune-wheel">Fortune-wheel </a>:A Flutter fortune wheel.
